@@ -1,4 +1,4 @@
-const worker = new Worker("./src/worker.js");
+const worker = new Worker("./worker.js");
 const box = document.querySelector("#box");
 
 function onReceivedMessage(event) {
