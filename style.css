@@ -1,0 +1,23 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#description p {
+    max-width: 30em;
+}
+
+#controls input[type="number"] {
+    width: 7ch;
+}
+
+#controls label {
+    display: block;
+    margin: 0.25em 0;
+}
+
+#box {
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+    background: red;
+}
