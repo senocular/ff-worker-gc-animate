@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Worker Animate</title>
+        <script src="./src/index.js" type="module"></script>
+        <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    </head>
+    <body>
+        <section id="description">
+            <h1>Worker Animate</h1>
+            <p>
+                Animation driven by requestAnimationFrame in worker. Each frame a "block" of objects is created. Each
+                block is retained until the max is reached then the oldest is removed.
+            </p>
+            <p>
+                In Firefox (as of 121.0.1) there's a noticeable stutter when the GC runs in the worker taking enough
+                time that it affects the requestAnimationFrame duration.
+            </p>
+        </section>
+        <section id="controls">
+            <label><input type="number" id="objects-num" value="500" /> Objects per block</label>
+            <label><input type="number" id="blocks-num" value="500" /> Max retained blocks</label>
+            <button id="apply-btn">Apply</button>
+        </section>
+        <section id="canvas">
+            <div id="box"></div>
+        </section>
+    </body>
+</html>
