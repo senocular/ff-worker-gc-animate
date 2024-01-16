@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>No-worker Animate</title>
+        <script src="../../scripts/addRepoLink.js" defer></script>
+        <script src="./src/noworker.js" type="module"></script>
+        <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    </head>
+    <body>
+        <section id="description">
+            <h1>No-worker Animate</h1>
+            <p>
+                Version of <a href="index.html">Worker Animate</a> without using workers animating entirely on the UI
+                thread.
+            </p>
+        </section>
+        <section id="controls">
+            <label><input type="number" id="objects-num" value="500" /> Objects per block</label>
+            <label><input type="number" id="blocks-num" value="500" /> Max retained blocks</label>
+            <button id="apply-btn">Apply</button>
+        </section>
+        <section id="canvas">
+            <div id="box"></div>
+        </section>
+    </body>
+</html>
