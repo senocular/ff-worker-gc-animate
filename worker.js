@@ -1,6 +1,6 @@
 const options = {
     maxBlocks: 500,
-    objectCount: 300,
+    objectCount: 500,
 };
 const blocks = [];
 let rotation = 0;
